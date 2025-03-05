@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShop Scheduling</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="schedule-container">
+          <div class="title-wrapper">
+            <div class="title-text">
+              <h1>Sua agenda</h1>
+              <p>
+                Aqui você pode ver todos os clientes e serviços agendados para
+                hoje.
+              </p>
+            </div>
+            <div class="calendar">
+              <img src="src/assets/calendar.svg" alt="" />
+              <p>10/01/2025</p>
+              <img src="src/assets/arrow-down.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="schedule-list">
+            <div class="morning">
+              <div class="header-list">
+                <img src="src/assets/morning.svg" alt="" />
+                <h2>Manhã</h2>
+                <p>09h-12h</p>
+              </div>
+              <div class="clients-morning">
+                <div class="item-morning">
+                  <p class="hour">09:00</p>
+                  <div class="pet-name-owner-name">
+                    <span class="pet-name">Thor </span>
+                    <span class="owner-name">/ Fernando Costa</span>
+                  </div>
+                  <p class="description">Vacinação</p>
+                  <div class="remove-item">
+                    <p>Remover agendamento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="afternoon">
+              <div class="header-list">
+                <img src="src/assets/afternoon.svg" alt="" />
+                <h2>Tarde</h2>
+                <p>13h-18h</p>
+              </div>
+              <div class="clients-morning">
+                <div class="item-morning">
+                  <p class="hour">13:00</p>
+                  <div class="pet-name-owner-name">
+                    <span class="pet-name">Mel </span>
+                    <span class="owner-name">/ João Souza</span>
+                  </div>
+                  <p class="description">Corte de unhas</p>
+                  <div class="remove-item">
+                    <p>Remover agendamento</p>
+                  </div>
+                </div>
+
+                <div class="item-morning">
+                  <p class="hour">13:00</p>
+                  <div class="pet-name-owner-name">
+                    <span class="pet-name">Bella </span>
+                    <span class="owner-name">/ Pedro Martins</span>
+                  </div>
+                  <p class="description">Aplicação de Anti-pulgas</p>
+                  <div class="remove-item">
+                    <p>Remover agendamento</p>
+                  </div>
+                </div>
+
+                <div class="item-morning">
+                  <p class="hour">13:00</p>
+                  <div class="pet-name-owner-name">
+                    <span class="pet-name">Simba </span>
+                    <span class="owner-name">/ Juliana Rocha</span>
+                  </div>
+                  <p class="description">Tosa higiênica</p>
+                  <div class="remove-item">
+                    <p>Remover agendamento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="night">
+              <div class="header-list">
+                <img src="src/assets/night.svg" alt="" />
+                <h2>Noite</h2>
+                <p>19h-21h</p>
+              </div>
+              <div class="clients-morning">
+                <div class="item-morning">
+                  <p class="hour">20:00</p>
+                  <div class="pet-name-owner-name">
+                    <span class="pet-name">Max </span>
+                    <span class="owner-name">/ Camila Santos</span>
+                  </div>
+                  <p class="description">Limpeza de dentes</p>
+                  <div class="remove-item">
+                    <p>Remover agendamento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+            <button type="button">
+                <p>NOVO AGENDAMENTO</p>
+              </button>
+        </div>
+        <div class="app-name-wrapper">
+          <div class="app-name-content">
+            <img src="src/assets/dog.svg" alt="" />
+            <p>MUNDO PET</p>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal-title">
+            <h2>Agende um atendimento</h2>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+          </div>
+
+          <div class="modal-form">
+            <div class="input-wrapper">
+              <label for="name" class="form-label">Nome do tutor</label>
+              <div class="input-name">
+                <img src="src/assets/contact.svg" alt="" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Helena Souza"
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="pet" class="form-label">Nome do pet</label>
+              <div class="input-name">
+                <img src="src/assets/pet-paw.svg" alt="" />
+                <input type="text" name="pet" id="pet" placeholder="Cheddar" />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="tel" class="form-label">Telefone</label>
+              <div class="input-name">
+                <img src="src/assets/phone.svg" alt="" />
+                <input
+                  type="text"
+                  name="tel"
+                  id="tel"
+                  placeholder="(00) 0 0000-0000"
+                />
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description" class="form-label"
+                >Descrição do serviço</label
+              >
+              <div class="textarea-name">
+                <textarea
+                  maxlength="50"
+                  name="description"
+                  id="description"
+                  placeholder="ex: Banho e tosa"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="date-time-wrapper">
+              <div class="date">
+                <label for="date" class="form-label">Data</label>
+                <div class="input-date-time">
+                  <img src="src/assets/calendar.svg" alt="" />
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    placeholder="10/01/2024"
+                  />
+                  <img src="src/assets/arrow-down.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="time">
+                <label for="date" class="form-label">Hora</label>
+                <div class="input-date-time">
+                  <img src="src/assets/clock.svg" alt="" />
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    placeholder="12:00"
+                  />
+                  <img src="src/assets/arrow-down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-btn">
+            <button type="button">
+              <p>AGENDAR</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
